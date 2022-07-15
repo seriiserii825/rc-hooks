@@ -3,7 +3,7 @@ import { CustomContext } from '../hooks/Context';
 import TodoListItem from './TodoListItem';
 
 export default function TodoList() {
-	const { todos, filter } = useContext(CustomContext);
+	const { todos, filter, search } = useContext(CustomContext);
 	let filteredTodos = [];
 
 	switch (filter) {
@@ -20,6 +20,10 @@ export default function TodoList() {
 			filteredTodos = todos;
 			break;
 	}
+
+	filteredTodos = filteredTodos.filter((todo) => {
+		return todo.title.toLowerCase().includes(search.toLowerCase());
+	});
 
 	return (
 		<ul className='list-group todo-list'>

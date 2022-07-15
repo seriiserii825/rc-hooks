@@ -9,6 +9,11 @@ export const Context = (props) => {
 		{ id: 3, title: 'Nodejs', done: false },
 	]);
 	const [filter, setFilter] = useState('all');
+	const [search, setSearch] = useState('');
+
+	const searchTodo = (searchStr) => {
+		setSearch(searchStr);
+	};
 
 	const addTodo = (title) => {
 		setTodos([
@@ -68,7 +73,9 @@ export const Context = (props) => {
 		filterAll,
 		filterActive,
 		filterDone,
-		filter
+		filter,
+		search,
+		searchTodo
 	};
 
 	return (
