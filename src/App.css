@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 .App {
 	text-align: center;
@@ -52,6 +52,9 @@
 	margin-bottom: 0;
 	color: #999;
 }
+.app-header strong {
+	color: black;
+}
 .todo {
 	margin: 0 auto;
 	max-width: 30rem;
@@ -68,6 +71,12 @@
 .todo-list-item .button {
 	padding: 3px 6px;
 	font-size: 0.8rem;
+}
+.todo-list-item h6 {
+	margin-bottom: 0;
+	text-align: left;
+	flex: 1;
+	cursor: pointer;
 }
 .button {
 	border: 1px solid transparent;
