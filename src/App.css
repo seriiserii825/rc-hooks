@@ -92,3 +92,8 @@
 	color: white;
 	background: green;
 }
+.new-todo input {
+	margin-top: 3rem;
+	width: 100%;
+	text-indent: 1rem;
+}

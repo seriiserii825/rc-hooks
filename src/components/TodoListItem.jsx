@@ -8,8 +8,8 @@ export default function TodoListItem(props) {
 	return (
 		<li className='todo-list-item list-group-item' style={style}>
 			<h6>{title}</h6>
-			<button class='button button--danger ml-auto mr-1'>Remove</button>
-			<button class='button button--success'>Important</button>
+			<button className='button button--danger ml-auto mr-1'>Remove</button>
+			<button className='button button--success'>Important</button>
 		</li>
 	);
 }
