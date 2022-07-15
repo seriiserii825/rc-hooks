@@ -1,38 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.app-header h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.app-header h2 {
+	font-size: 1rem;
+	font-weight: normal;
+	margin-bottom: 0;
+	color: #999;
+}
+.todo {
+	margin: 0 auto;
+	max-width: 30rem;
+}
+.todo-list .list-group-item {
+	padding: 0.25rem 0.75rem;
+}
+.todo-list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todo-list-item .button {
+	padding: 3px 6px;
+	font-size: 0.8rem;
+}
+.button {
+	border: 1px solid transparent;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.button--danger {
+	color: black;
+	border-color: tomato;
+}
+.button--danger:hover {
+	color: white;
+	background: tomato;
+}
+.button--success {
+	color: black;
+	border-color: green;
+}
+
+.button--success:hover {
+	color: white;
+	background: green;
 }

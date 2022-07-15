@@ -1,11 +1,14 @@
 import './App.css';
+import { Context } from './hooks/Context';
 import { Todo } from './pages/Todo';
 
 function App() {
 	return (
-		<div className='App'>
-			<Todo />
-		</div>
+		<Context>
+			<div className='App'>
+				<Todo />
+			</div>
+		</Context>
 	);
 }
 
